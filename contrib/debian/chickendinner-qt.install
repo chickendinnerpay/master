@@ -1,0 +1,6 @@
+usr/local/bin/chickendinner-qt usr/bin
+share/pixmaps/chickendinner32.xpm usr/share/pixmaps
+share/pixmaps/chickendinner16.xpm usr/share/pixmaps
+share/pixmaps/chickendinner128.png usr/share/pixmaps
+debian/chickendinner-qt.desktop usr/share/applications
+debian/chickendinner-qt.protocol usr/share/kde4/services/

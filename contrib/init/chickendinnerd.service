@@ -1,0 +1,22 @@
+[Unit]
+Description=chickendinner's distributed currency daemon
+After=network.target
+
+[Service]
+User=chickendinnercore
+Group=chickendinnercore
+
+Type=forking
+PIDFile=/var/lib/chickendinnerd/chickendinnerd.pid
+ExecStart=/usr/bin/chickendinnerd -daemon -pid=/var/lib/chickendinnerd/chickendinnerd.pid \
+-conf=/etc/chickendinnercore/chickendinner.conf -datadir=/var/lib/chickendinnerd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
