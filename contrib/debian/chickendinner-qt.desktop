@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=chickendinner
+Comment=chickendinner P2P Cryptocurrency
+Comment[fr]=chickendinner, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=chickendinner, eşten eşe kriptografik sanal para birimi
+Exec=chickendinner-qt %u
+Terminal=false
+Type=Application
+Icon=chickendinner128
+MimeType=x-scheme-handler/chickendinner;
+Categories=Office;Finance;
